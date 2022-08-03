@@ -196,7 +196,7 @@
   transition: all 0.1s linear;
 }
 .header-bottom .vertical-menu .nav-vertical-item:hover .nav-vertical-link {
-  background: #d29e10;
+  background: #000;
   color: #fff;
 }
 .header-bottom .vertical-menu .nav-vertical-item .nav-vertical-sub {
@@ -205,7 +205,7 @@
   left: 100%;
   width: 937px;
   background: #f5f5f5;
-  padding: 2rem;
+  padding: 20px 20px 23px;
   display: flex;
   opacity: 0;
   visibility: hidden;
@@ -282,6 +282,15 @@
   bottom: 2rem;
   left: 2rem;
   padding: 1.5rem 6rem;
+  background-color: unset;
+  border: 1px solid #FFFFFF;
+  transition: .4s;
+}
+.header-bottom .vertical-menu .nav-vertical-item .nav-vertical-sub--right .box-cate-info .btn:hover{
+  color: #FFFFFF;
+  background-color: #CB1515;
+  border: 1px solid #CB1515;
+  transition: .4s;
 }
 .header-bottom .vertical-menu .nav-vertical-item .nav-vertical-sub--right__image {
   position: relative;
@@ -1638,6 +1647,29 @@
 .home-page .suggess {
   padding: 8rem 0;
 }
+.suggess .tab-list{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 30px;
+}
+.suggess .tab-list .btn{
+  margin: 10px 15px;
+  width: 191px;
+  height: 58px;
+  background-color: #FFFFFF;
+  border: 1px solid #000000;
+  color: #000000;
+  cursor: pointer;
+  transition: .4s;
+}
+.suggess .tab-list .btn:hover{
+  border: 1px solid #dc0808;
+  color: #dc0808;
+  cursor: pointer;
+  transition: .4s;
+}
 .home-page .suggess .row + .row {
   margin-top: 8rem;
 }
@@ -1891,6 +1923,7 @@
   display: block;
   font-size: 1.4rem;
   line-height: 1.9rem;
+  text-align: center
 }
 .home-page .suggess .box-product-price {
   display: flex;
@@ -2153,6 +2186,8 @@
   align-items: center;
   justify-content: center;
   padding-bottom: 3rem;
+  padding-right: 30px;
+  padding-left: 30px;
 }
 .home-page .customer-review .review-item__avatar {
   width: 8rem;
@@ -2206,8 +2241,8 @@
   text-transform: uppercase;
   margin-bottom: 1rem;
 }
-.home-page .customer-brand-title__caption {
-  margin-bottom: 2rem;
+.home-page .customer-brand-list{
+  margin-top: 30px;
 }
 .home-page .customer-brand-list.owl-carousel .owl-nav button.owl-prev {
   background: transparent;
@@ -2254,6 +2289,8 @@
   margin: 0 auto;
   overflow: hidden;
   padding-top: 100px;
+  width: 170px;
+  height: 100px;
 }
 .home-page .customer-brand-item__image.image-cover img {
   right: 0;

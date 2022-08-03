@@ -36,21 +36,21 @@ $(document).ready(function () {
         $('.header').removeClass('stuck');
       }
     });
-    $('.box-product .box-product__image').hover(
-      function () {
-        $(this).next('.box-product-tooltip').addClass('toggle');
-      },
-      function () {
-        $(this).next('.box-product-tooltip').removeClass('toggle');
-      }
-    );
-    $('.box-product-tooltip').hover(
-      function () {
-        $(this).addClass('toggle');
-      },
-      function () {
-        $(this).removeClass('toggle');
-      }
-    );
   }
+  $('.box-product .box-product__image').hover(
+    function () {
+      $(this).next('.box-product-tooltip').addClass('toggle');
+    },
+    function () {
+      $(this).next('.box-product-tooltip').removeClass('toggle');
+    }
+  );
+  $('.box-product-tooltip').hover(
+    function () {
+      $(this).addClass('toggle');
+    },
+    function () {
+      $(this).removeClass('toggle');
+    }
+  );
 });
